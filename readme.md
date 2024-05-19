@@ -28,19 +28,19 @@ Life Hacks Central was developed using modern web technologies including HTML an
 
 ## Features
 1.  Navigation Menu: Easily navigate through different sections. Featured on all three pages, including Home, Categories, About, and Upload (Submit Your Life Hack) and is identical in each page to allow for easy navigation.
-![Pitcture of the navigation bar](image.png)
+![Pitcture of the navigation bar](Images/Readme/NavigationBarShowcase.png)
 
 2.  Category Selection: Explore life hacks tailored to your interests with categories like Kitchen Hacks, Tech Tips, Organization Tips, and Health & Wellness.
-![picture of the catagory drop down menu](image-1.png)
+![picture of the catagory drop down menu](Images/Readme/Categories.png)
 
 3.  Life Hack Submission Form: Share your own life hacks effortlessly using the submission form, which includes fields for title, description, and category selection.
-![Picture showin the submision page](image-2.png)
+![Picture showin the submision page](Images/Readme/SubmitShowcase.png)
 
 4.  Featured Life Hacks: Discover curated life hacks showcased prominently on the main section of the website, complete with titles, descriptions, and illustrative images.
-![Picture showing two of the fetured life hacks](image-3.png)
+![Picture showing two of the fetured life hacks](Images/Readme/FeaturedLifeHacksShowcase.png)
 
 5.  Responsive Design: Enjoy a seamless browsing experience across various devices and screen sizes thanks to the website's responsive design.
-![Picture showing the website on diffrent devices](ShowcaseImage.png)
+![Picture showing the website on diffrent devices](Images/Readme/ShowcaseImage.png)
 
 6.  Background Images: Immerse yourself in visually captivating backgrounds that correspond to different categories, enhancing the overall aesthetic appeal.
 
@@ -91,7 +91,11 @@ For detailed information on the testing process, please refer to the [Testing Do
 
 ## Usage
 
-Provide instructions on how to use your project. Include examples if applicable.
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+In the GitHub repository, navigate to the Settings tab
+From the source section drop-down menu, select the Master Branch
+Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+The live link can be found here - https://vretinger.github.io/LifeHackCentral/
 
 
 ## Credits
