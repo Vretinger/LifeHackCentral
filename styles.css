@@ -1,0 +1,312 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    flex: 1;
+}
+
+.hack {
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+}
+
+.hack-content {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center; /* Align items vertically */
+}
+
+
+.intro-article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #ccc; /* Increase border size */
+}
+
+.intro-article p {
+    font-size: 18px; /* Increase font size */
+    line-height: 1.6; /* Increase line height */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Set text color */
+}
+
+.intro-article .article-img {
+    display: block;
+    margin: 0 auto 20px; /* Center the image */
+    width: 80%; /* Increase the width of the image */
+    border: 2px solid #000; /* Increase border size for the image */
+}
+
+
+
+.article-img {
+    flex: 0 0 50%; /* Set the width of the image */
+    margin-right: 20px; /* Add margin between the image and text */
+}
+
+.submit-button {
+    text-align: center; /* Center the button */
+    margin-bottom: 20px; /* Add margin to the bottom */
+}
+
+
+.submit-button .submit-image {
+    width: 60%; /* Set the width of the image to 100% */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+
+.submit-button:hover {
+    background-color: #f0f0f0; /* Set background color on hover */
+    transform: scale(1.05); /* Scale up the article on hover */
+}
+
+
+.submit-button .submit-text {
+    margin-top: 10px; 
+    font-weight: bold; 
+    text-decoration: none !important; 
+    color: #333; 
+}
+
+#submit-hack {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#submit-hack label {
+    font-weight: bold;
+}
+
+#submit-hack input[type="text"],
+#submit-hack textarea,
+#submit-hack select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#submit-hack input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-hack input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+nav {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+#about {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+/* Tooltip container */
+nav ul li a[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 0.8em;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* Tooltip initially hidden */
+nav ul li a[data-tooltip]::after {
+    opacity: 0;
+}
+
+/* Dropdown menu styles */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+nav ul li .dropdown-content li {
+    display: block;
+}
+
+nav ul li .dropdown-content li a {
+    padding: 10px;
+    color: #fff;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li a[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 0.8em;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* Tooltip initially hidden */
+nav ul li a[data-tooltip]::after {
+    opacity: 0;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 20px;
+}
+
+#life-hacks {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hack {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#about {
+    max-width: 800px; /* Limit the width of the section */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px; /* Add padding to the section */
+}
+
+#about h2 {
+    font-size: 24px; /* Set the font size of the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+#about p {
+    font-size: 16px; /* Set the font size of paragraphs */
+    line-height: 1.6; /* Set the line height of paragraphs */
+    margin-bottom: 15px; /* Add spacing below paragraphs */
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.kitchen-page {
+    background-image: url(Images/KitchenHacks/KitchenBakground.jpg);
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fixed background image */
+}
+
+
+
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        flex: 1;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px 15px;
+    }
+}

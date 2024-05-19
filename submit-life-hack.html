@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Life Hack - Life Hacks Central</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Life Hacks Central</h1>
+        <nav id="main-navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories</a>
+                    <ul class="dropdown-content">
+                        <li><a href="kitchen-hacks.html">Kitchen Hacks</a></li>
+                        <li><a href="tech-tips.html">Tech Tips</a></li>
+                        <li><a href="organization-tips.html">Organization Tips</a></li>
+                        <li><a href="health-wellness.html">Health & Wellness</a></li>
+                    </ul>
+                </li>
+                <li><a href="submit-life-hack.html" data-tooltip="Submit Your Life Hack">Upload</a></li>
+                <a id="about" href="index.html#about">About</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="submit-hack">
+            <h2>Submit Your Life Hack</h2>
+            <form action="submit.php" method="post">
+                <label for="hack-title">Title:</label><br>
+                <input type="text" id="hack-title" name="hack-title" required><br><br>
+                <label for="hack-description">Description:</label><br>
+                <textarea id="hack-description" name="hack-description" rows="4" required></textarea><br><br>
+                <label for="category">Category:</label><br>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="kitchen">Kitchen Hacks</option>
+                    <option value="tech">Tech Tips</option>
+                    <option value="organization">Organization Tips</option>
+                    <option value="health">Health & Wellness</option>
+                </select><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
