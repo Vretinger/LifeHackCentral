@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Submit Your Life Hack - Life Hacks Central</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Function to set the selected category based on the query parameter
+        function setCategory() {
+            const category = getQueryParam('category');
+            if (category) {
+                const selectElement = document.getElementById('category');
+                selectElement.value = category;
+            }
+        }
+
+        // Run the setCategory function after the page loads
+        window.onload = setCategory;
+    </script>
 </head>
 <body>
     <header>
@@ -21,19 +40,28 @@
                         <li><a href="health-wellness.html">Health & Wellness</a></li>
                     </ul>
                 </li>
-                <li><a href="submit-life-hack.html" data-tooltip="Submit Your Life Hack">Upload</a></li>
-                <a id="about" href="index.html#about">About</a>
+                <li><a href="about.html">About</a></li>
+                <li><a href="submit-life-hack.html">Submit Your Life Hack</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="submit-hack">
-            <h2>Submit Your Life Hack</h2>
-            <form action="submit.php" method="post">
+            <h2 class="visually-hidden">Submit Your Life Hack</h2>
+            <article class="hack">
+                <h2>Submit Your Life Hack</h2>
+                <div class="hack-content">
+                    <img src="Images/Index/SubmitLifeHack.jpg" alt="A picture showing a use case of old magazine holders" class="article-img">
+                    <p>Do you have a brilliant life hack that's changed the game for you? Share it with us! We're always on the lookout for clever solutions and innovative ideas from our community. Whether it's a time-saving kitchen trick, a tech tip that simplifies your digital life, or a creative organization hack, we want to hear about it. Your contribution could inspire others and make their lives easier too. So don't keep your genius hacks to yourself—upload them now and be part of our growing collection of user-generated life hacks!</p>
+                </div>
+            </article>
+            <form action="https://formdump.codeinstitute.net" method="post" enctype="multipart/form-data">
                 <label for="hack-title">Title:</label><br>
                 <input type="text" id="hack-title" name="hack-title" required><br><br>
+                
                 <label for="hack-description">Description:</label><br>
                 <textarea id="hack-description" name="hack-description" rows="4" required></textarea><br><br>
+                
                 <label for="category">Category:</label><br>
                 <select id="category" name="category" required>
                     <option value="" disabled selected>Select Category</option>
@@ -42,10 +70,16 @@
                     <option value="organization">Organization Tips</option>
                     <option value="health">Health & Wellness</option>
                 </select><br><br>
+                
+                <label for="hack-image">Upload Image:</label><br>
+                <input type="file" id="hack-image" name="hack-image" accept="image/*" required><br><br>
+                
                 <input type="submit" value="Submit">
             </form>
         </section>
     </main>
-    
+    <footer>
+        <p>&copy; 2024 Life Hacks</p>
+    </footer>
 </body>
 </html>

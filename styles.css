@@ -21,16 +21,44 @@ header h1 {
     flex: 1;
 }
 
+main {
+    padding: 20px;
+}
+
+#life-hacks {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .hack {
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.hack h1 {
+    margin-bottom: 10px; /* Add space below the h1 */
 }
 
 .hack-content {
-    display: flex;
-    flex-direction: row; /* Arrange items in a row */
+    display: flex; /* Use flexbox layout */
     align-items: center; /* Align items vertically */
 }
+
+.hack-content img {
+    max-width: 50%; /* Limit image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add space between image and text */
+}
+
+.hack-content p {
+    flex: 1; /* Allow text content to fill remaining space */
+}
+
 
 
 .intro-article {
@@ -151,10 +179,14 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-#about {
+#about-button {
     color: #fff;
     text-decoration: none;
     padding: 15px 20px;
+}
+
+#about-button:hover {
+    background-color: #555;
 }
 
 /* Tooltip container */
@@ -249,9 +281,17 @@ main {
 }
 
 #about {
-    max-width: 800px; /* Limit the width of the section */
-    margin: 0 auto; /* Center the section horizontally */
-    padding: 20px; /* Add padding to the section */
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Add padding to the top and bottom of the section */
+    width: 100%; /* Ensure the section spans the full width of the screen */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+#about .content {
+    max-width: 800px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add some horizontal padding */
 }
 
 #about h2 {
@@ -270,11 +310,44 @@ html {
     scroll-behavior: smooth;
 }
 
-.kitchen-page {
-    background-image: url(Images/KitchenHacks/KitchenBakground.jpg);
+.base-page {
+    position: relative; /* Make the element a containing block for the pseudo-element */
+}
+
+.base-page::before {
+    content: '';
+    position: fixed; /* Fix the pseudo-element so it stays in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover; /* Cover the entire background */
     background-position: center; /* Center the background image */
-    background-attachment: fixed; /* Fixed background image */
+    filter: blur(2px); /* Apply the blur effect */
+    z-index: -1; /* Place the pseudo-element behind the content */
+    pointer-events: none; /* Ensure the pseudo-element doesn't block interactions */
+}
+
+.kitchen-page::before {
+    background-image: url(Images/KitchenHacks/KitchenBakground.jpg);
+}
+
+.tech-page::before {
+    background-image: url(Images/TechTips/TechBakground.jpg);
+    background-size: cover; /* Cover the entire background */
+    background-position: center 80%; /* Center the background horizontally and adjust vertically */
+}
+
+.wellness-page::before {
+    background-image: url(Images/HealthWellness/HealthWellnessBackground.jpg);
+    background-size: cover; /* Cover the entire background */
+    background-position: center 80%; /* Center the background horizontally and adjust vertically */
+}
+
+.organization-page::before {
+    background-image: url(Images/OrganizationHacks/organizationBackground.jpg);
+    background-size: cover; /* Cover the entire background */
+    background-position: center 60%; /* Center the background horizontally and adjust vertically */
 }
 
 
@@ -309,4 +382,35 @@ html {
     nav ul li a {
         padding: 10px 15px;
     }
+
+    .hack {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack elements vertically */
+    }
+    
+    .hack h1 {
+        margin-bottom: 10px; /* Add space below the h1 */
+    }
+    
+    .hack-content {
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack elements vertically by default */
+    }
+    
+    .hack-content img {
+        max-width: 100%; /* Make the image fill the container width */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Add space below the image */
+    }
+    
+    .hack-content p {
+        margin: 0; /* Reset default margins */
+    }
 }
+
+
