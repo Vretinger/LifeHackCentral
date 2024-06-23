@@ -1,3 +1,4 @@
+/* Set global font, margin, padding, background color, and text color */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Style for the header */
 header {
     background-color: #333;
     color: #fff;
@@ -16,20 +18,24 @@ header {
     flex-wrap: wrap;
 }
 
+/* Style for the header's h1 element */
 header h1 {
     margin: 0;
     flex: 1;
 }
 
+/* Style for the main content area */
 main {
     padding: 20px;
 }
 
+/* Style for the life-hacks section */
 #life-hacks {
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* Style for individual hack containers */
 .hack {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -40,33 +46,37 @@ main {
     flex-direction: column; /* Stack elements vertically */
 }
 
+/* Style for the h1 inside hack containers */
 .hack h1 {
     margin-bottom: 10px; /* Add space below the h1 */
 }
 
+/* Style for the content inside hack containers */
 .hack-content {
     display: flex; /* Use flexbox layout */
     align-items: center; /* Align items vertically */
 }
 
+/* Style for images inside hack content */
 .hack-content img {
     max-width: 50%; /* Limit image width */
     height: auto; /* Maintain aspect ratio */
     margin-right: 20px; /* Add space between image and text */
 }
 
+/* Style for paragraphs inside hack content */
 .hack-content p {
     flex: 1; /* Allow text content to fill remaining space */
 }
 
-
-
+/* Style for intro article */
 .intro-article {
     background-color: #f9f9f9;
     padding: 20px;
     border: 2px solid #ccc; /* Increase border size */
 }
 
+/* Style for paragraphs in intro article */
 .intro-article p {
     font-size: 18px; /* Increase font size */
     line-height: 1.6; /* Increase line height */
@@ -74,6 +84,7 @@ main {
     color: #333; /* Set text color */
 }
 
+/* Style for images in intro article */
 .intro-article .article-img {
     display: block;
     margin: 0 auto 20px; /* Center the image */
@@ -81,49 +92,52 @@ main {
     border: 2px solid #000; /* Increase border size for the image */
 }
 
-
-
+/* Style for article images */
 .article-img {
     flex: 0 0 50%; /* Set the width of the image */
     margin-right: 20px; /* Add margin between the image and text */
 }
 
+/* Style for submit button container */
 .submit-button {
     text-align: center; /* Center the button */
     margin-bottom: 20px; /* Add margin to the bottom */
 }
 
-
+/* Style for submit button images */
 .submit-button .submit-image {
     width: 60%; /* Set the width of the image to 100% */
     height: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease; /* Add transition for hover effect */
 }
 
-
+/* Hover effect for submit button */
 .submit-button:hover {
     background-color: #f0f0f0; /* Set background color on hover */
     transform: scale(1.05); /* Scale up the article on hover */
 }
 
-
+/* Style for submit button text */
 .submit-button .submit-text {
-    margin-top: 10px; 
-    font-weight: bold; 
-    text-decoration: none !important; 
-    color: #333; 
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: #333;
 }
 
+/* Style for submit hack section */
 #submit-hack {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
+/* Style for labels in submit hack section */
 #submit-hack label {
     font-weight: bold;
 }
 
+/* Style for text inputs, textareas, and selects in submit hack section */
 #submit-hack input[type="text"],
 #submit-hack textarea,
 #submit-hack select {
@@ -134,6 +148,7 @@ main {
     border-radius: 5px;
 }
 
+/* Style for submit button in submit hack section */
 #submit-hack input[type="submit"] {
     background-color: #007bff;
     color: #fff;
@@ -143,18 +158,19 @@ main {
     cursor: pointer;
 }
 
+/* Hover effect for submit button in submit hack section */
 #submit-hack input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-
-
+/* Style for navigation */
 nav {
     flex: 2;
     display: flex;
     justify-content: flex-end;
 }
 
+/* Style for unordered list in navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -162,11 +178,12 @@ nav ul {
     display: flex;
 }
 
+/* Style for list items in navigation */
 nav ul li {
     position: relative;
 }
 
-
+/* Style for links in navigation */
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -175,16 +192,19 @@ nav ul li a {
     transition: background-color 0.3s ease;
 }
 
+/* Hover effect for links in navigation */
 nav ul li a:hover {
     background-color: #555;
 }
 
+/* Style for about button */
 #about-button {
     color: #fff;
     text-decoration: none;
     padding: 15px 20px;
 }
 
+/* Hover effect for about button */
 #about-button:hover {
     background-color: #555;
 }
@@ -223,19 +243,23 @@ nav ul li .dropdown-content {
     left: 0;
 }
 
+/* Style for dropdown menu list items */
 nav ul li .dropdown-content li {
     display: block;
 }
 
+/* Style for links in dropdown menu */
 nav ul li .dropdown-content li a {
     padding: 10px;
     color: #fff;
 }
 
+/* Show dropdown menu on hover */
 nav ul li:hover .dropdown-content {
     display: block;
 }
 
+/* Tooltip container */
 nav ul li a[data-tooltip]:hover::after {
     content: attr(data-tooltip);
     position: absolute;
@@ -258,20 +282,24 @@ nav ul li a[data-tooltip]::after {
     opacity: 0;
 }
 
+/* Style for banner */
 .banner {
     width: 100%;
     height: auto;
 }
 
+/* Style for main content area */
 main {
     padding: 20px;
 }
 
+/* Style for life-hacks section */
 #life-hacks {
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* Style for individual hack containers */
 .hack {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -280,6 +308,7 @@ main {
     margin: 10px 0;
 }
 
+/* Style for about section */
 #about {
     background-color: #333;
     color: #fff;
@@ -288,28 +317,32 @@ main {
     box-sizing: border-box; /* Include padding in the element's total width and height */
 }
 
+/* Style for content inside about section */
 #about .content {
     max-width: 800px; /* Limit the width of the content */
     margin: 0 auto; /* Center the content */
     padding: 0 20px; /* Add some horizontal padding */
 }
 
+/* Style for headings in about section */
 #about h2 {
     font-size: 24px; /* Set the font size of the heading */
     margin-bottom: 20px; /* Add spacing below the heading */
 }
 
+/* Style for paragraphs in about section */
 #about p {
     font-size: 16px; /* Set the font size of paragraphs */
     line-height: 1.6; /* Set the line height of paragraphs */
     margin-bottom: 15px; /* Add spacing below paragraphs */
 }
 
-
+/* Enable smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
+/* Base page style with blurred background image */
 .base-page {
     position: relative; /* Make the element a containing block for the pseudo-element */
 }
@@ -328,45 +361,47 @@ html {
     pointer-events: none; /* Ensure the pseudo-element doesn't block interactions */
 }
 
+/* Specific background image for kitchen page */
 .kitchen-page::before {
-    background-image: url(Images/KitchenHacks/KitchenBakground.jpg);
+    background-image: url(Images/KitchenHacks/KitchenBackground.jpg);
 }
 
+/* Specific background image for tech page */
 .tech-page::before {
-    background-image: url(Images/TechTips/TechBakground.jpg);
+    background-image: url(Images/TechTips/TechBackground.jpg);
     background-size: cover; /* Cover the entire background */
     background-position: center 80%; /* Center the background horizontally and adjust vertically */
 }
 
+/* Specific background image for wellness page */
 .wellness-page::before {
     background-image: url(Images/HealthWellness/HealthWellnessBackground.jpg);
     background-size: cover; /* Cover the entire background */
     background-position: center 80%; /* Center the background horizontally and adjust vertically */
 }
 
+/* Specific background image for organization page */
 .organization-page::before {
     background-image: url(Images/OrganizationHacks/organizationBackground.jpg);
     background-size: cover; /* Cover the entire background */
     background-position: center 60%; /* Center the background horizontally and adjust vertically */
 }
 
-
-
-
-
-
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
+    /* Adjust header for smaller screens */
     header {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Adjust navigation for smaller screens */
     nav {
         width: 100%;
         justify-content: center;
     }
 
+    /* Adjust navigation list for smaller screens */
     nav ul {
         flex-direction: row;
         flex-wrap: wrap;
@@ -374,15 +409,18 @@ html {
         width: 100%;
     }
 
+    /* Adjust navigation list items for smaller screens */
     nav ul li {
         flex: 1;
         text-align: center;
     }
 
+    /* Adjust navigation links for smaller screens */
     nav ul li a {
         padding: 10px 15px;
     }
 
+    /* Adjust hack containers for smaller screens */
     .hack {
         background-color: #fff;
         border: 1px solid #ddd;
@@ -392,25 +430,28 @@ html {
         display: flex; /* Use flexbox layout */
         flex-direction: column; /* Stack elements vertically */
     }
-    
+
+    /* Adjust h1 inside hack containers for smaller screens */
     .hack h1 {
         margin-bottom: 10px; /* Add space below the h1 */
     }
-    
+
+    /* Adjust hack content for smaller screens */
     .hack-content {
         display: flex; /* Use flexbox layout */
         flex-direction: column; /* Stack elements vertically by default */
     }
-    
+
+    /* Adjust images inside hack content for smaller screens */
     .hack-content img {
         max-width: 100%; /* Make the image fill the container width */
         height: auto; /* Maintain aspect ratio */
         margin-bottom: 10px; /* Add space below the image */
     }
-    
+
+    /* Adjust paragraphs inside hack content for smaller screens */
     .hack-content p {
         margin: 0; /* Reset default margins */
     }
 }
-
 
