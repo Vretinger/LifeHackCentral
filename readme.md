@@ -28,19 +28,19 @@ Life Hacks Central was developed using modern web technologies including HTML an
 
 ## Features
 1.  Navigation Menu: Easily navigate through different sections. Featured on all three pages, including Home, Categories, About, and Upload (Submit Your Life Hack) and is identical in each page to allow for easy navigation.
-![Pitcture of the navigation bar](Images/Readme/NavigationBarShowcase.png)
+![Pitcture of the navigation bar](assets/Images/Readme/NavigationBarShowcase.png)
 
 2.  Category Selection: Explore life hacks tailored to your interests with categories like Kitchen Hacks, Tech Tips, Organization Tips, and Health & Wellness.
-![picture of the catagory drop down menu](Images/Readme/Categories.png)
+![picture of the catagory drop down menu](assets/Images/Readme/Categories.png)
 
 3.  Life Hack Submission Form: Share your own life hacks effortlessly using the submission form, which includes fields for title, description, and category selection.
-![Picture showin the submision page](Images/Readme/SubmitShowcase.png)
+![Picture showin the submision page](assets/Images/Readme/SubmitShowcase.png)
 
 4.  Featured Life Hacks: Discover curated life hacks showcased prominently on the main section of the website, complete with titles, descriptions, and illustrative images.
-![Picture showing two of the fetured life hacks](Images/Readme/FeaturedLifeHacksShowcase.png)
+![Picture showing two of the fetured life hacks](assets/Images/Readme/FeaturedLifeHacksShowcase.png)
 
 5.  Responsive Design: Enjoy a seamless browsing experience across various devices and screen sizes thanks to the website's responsive design.
-![Picture showing the website on diffrent devices](Images/Readme/ShowcaseImage.png)
+![Picture showing the website on diffrent devices](assets/Images/Readme/ShowcaseImage.png)
 
 6.  Background Images: Immerse yourself in visually captivating backgrounds that correspond to different categories, enhancing the overall aesthetic appeal.
 
